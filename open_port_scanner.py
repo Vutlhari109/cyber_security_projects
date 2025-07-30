@@ -12,4 +12,16 @@ def port_scan(ip, port):
 
 # Run the scan on a known IP and port
 port_scan("10.236.245.104", 53)
+
+
+
+
+
+
+
+
+
+
+
+
      
