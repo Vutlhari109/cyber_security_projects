@@ -1,0 +1,68 @@
+WIRESHARK NOTES - Filters and Useful Commands
+
+# ----------------------------
+# ✅ Display Filters (after capture)
+# ----------------------------
+
+http                            // Show only HTTP traffic
+tcp                             // Show only TCP traffic
+udp                             // Show only UDP traffic
+icmp                            // Show only ICMP (ping) traffic
+dns                             // Show only DNS traffic
+ftp                             // Show only FTP traffic
+
+ip.addr == 192.168.1.1          // Filter by IP address
+ip.src == 10.0.0.1              // Source IP only
+ip.dst == 8.8.8.8               // Destination IP only
+
+tcp.port == 443                 // Filter by port (SSL)
+udp.port == 53                  // Filter by port (DNS)
+tcp contains "login"            // TCP packets containing "login"
+
+eth.addr == 00:11:22:33:44:55   // Filter by MAC address
+frame contains "password"       // Show packets containing specific string
+
+!(ip.addr == 192.168.1.1)       // Exclude traffic from an IP
+http.request.method == "POST"  // Show only HTTP POST requests
+
+# ----------------------------
+# ✅ Capture Filters (before capture)
+# ----------------------------
+
+host 192.168.1.100              // Capture all traffic from/to this host
+port 80                         // Capture all traffic on port 80
+src host 10.0.0.2               // Only capture traffic from source IP
+dst net 192.168.0.0/16          // Destination network
+tcp                             // Capture TCP traffic only
+udp                             // Capture UDP traffic only
+
+# ----------------------------
+# ✅ Useful Features
+# ----------------------------
+
+Follow TCP Stream:
+- Right click on packet > Follow > TCP Stream
+
+Export Objects (e.g. HTTP files, images):
+- File > Export Objects > HTTP
+
+Check Conversations:
+- Statistics > Conversations
+
+Protocol Hierarchy:
+- Statistics > Protocol Hierarchy
+
+Endpoints and Hosts:
+- Statistics > Endpoints
+
+Use Coloring Rules:
+- View > Coloring Rules > Add custom filters
+
+# ----------------------------
+# ✅ Tips
+# ----------------------------
+
+- Save your capture: File > Save As (.pcapng)
+- Use Bookmarks for suspicious packets
+- Label specific IPs to identify endpoints
+- Set time display to UTC for consistency
