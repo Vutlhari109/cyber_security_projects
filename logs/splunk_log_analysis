@@ -1,0 +1,72 @@
+SPLUNK NOTES - Common Search Queries & Commands
+
+# --------------------------
+# ✅ Basic Search Examples
+# --------------------------
+
+index=windows                       // All Windows logs
+index=firewall                      // All firewall logs
+index=* error                       // Search for keyword 'error' in all indexes
+
+# --------------------------
+# ✅ Login Event Searches
+# --------------------------
+
+index=windows EventCode=4624        // Successful login
+index=windows EventCode=4625        // Failed login
+index=windows EventCode=4648        // Logon with explicit credentials
+index=windows EventCode=4740        // Account locked
+index=windows EventCode=4720        // New user account created
+index=windows EventCode=4726        // User account deleted
+
+# --------------------------
+# ✅ User & Account Activity
+# --------------------------
+
+index=windows Account_Name="admin"       // Track a specific user
+index=windows | stats count by Account_Name
+
+# Failed logins by user
+index=windows EventCode=4625 | stats count by Account_Name
+
+# Successful logins by time
+index=windows EventCode=4624 | timechart count by Account_Name
+
+# --------------------------
+# ✅ Time Range Filtering
+# --------------------------
+
+index=windows earliest=-24h@h latest=now
+index=windows earliest="08/01/2025:00:00:00" latest="08/01/2025:23:59:59"
+
+# --------------------------
+# ✅ Threat Hunting Examples
+# --------------------------
+
+index=network sourcetype=dns                          // DNS queries
+index=network NOT (dest_port=80 OR dest_port=443)     // Unusual port access
+index=firewall action=blocked                         // Blocked traffic
+
+# --------------------------
+# ✅ File & Process Monitoring
+# --------------------------
+
+index=windows EventCode=4688                          // New process created
+index=windows EventCode=4663                          // File object access
+
+# --------------------------
+# ✅ Data Visualization
+# --------------------------
+
+index=windows EventCode=4625 | timechart count
+index=windows | top 10 Account_Name
+
+# --------------------------
+# ✅ Useful Commands
+# --------------------------
+
+stats     // Aggregates data (sum, avg, count)
+table     // Format data into a table
+timechart // Graph data over time
+eval      // Create calculated fields
+dedup     // Remove duplicate events
