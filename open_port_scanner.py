@@ -11,7 +11,7 @@ def port_scan(ip, port):
         print(f"Port {port} on {ip} is CLOSED")
 
 # Run the scan on a known IP and port
-port_scan("10.236.245.104", 53)
+port_scan("IP_ADDRESS", PORT)
 
 
 
