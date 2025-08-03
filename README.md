@@ -73,11 +73,6 @@ Edit
 **Vutlhari Mathebula**  
 Cybersecurity Learner | Ethical Hacker | Forensics Enthusiast  
 🔗 GitHub: [github.com/Vutlhari109](https://github.com/Vutlhari109)  
-📧 Email: vutlhari109@gmail.com  
+📧 Email: vutlharimathebula74@gmail.com  
 🇿🇦 South Africa
 
----
-
-## 📌 Related Tags
-
-`#EthicalHacking` `#Cybersecurity` `#ReverseShell` `#Wireshark` `#PythonSecurity` `#Forensics` `#PenetrationTesting`
