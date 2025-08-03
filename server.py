@@ -1,34 +1,23 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import subprocess
-import os
 
 app = Flask(__name__)
-UPLOAD_FOLDER = "uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-@app.route("/run", methods=["POST"])
-def run_uploaded_script():
-    uploaded_file = request.files.get("file")
-    address = request.args.get("address", "")
-    port = request.args.get("port", "")
-    domain = request.args.get("domain", "")
+@app.route('/scan', methods=['POST'])
+def scan():
+    domain = request.form.get("target")
+    if not domain:
+        return jsonify({"error": "Missing target"}), 400
 
-    if not uploaded_file:
-        return "No file uploaded.", 400
+    nmap = subprocess.run(["nmap", "-F", domain], capture_output=True, text=True).stdout
+    whois = subprocess.run(["whois", domain], capture_output=True, text=True).stdout
+    nslookup = subprocess.run(["nslookup", domain], capture_output=True, text=True).stdout
 
-    filepath = os.path.join(UPLOAD_FOLDER, uploaded_file.filename)
-    uploaded_file.save(filepath)
-
-    try:
-        # Run the uploaded script with arguments
-        result = subprocess.run(
-            ["python3", filepath, address, port, domain],
-            capture_output=True,
-            text=True
-        )
-        return f"Output:\n{result.stdout}\nErrors:\n{result.stderr}"
-    finally:
-        os.remove(filepath)
+    return jsonify({
+        "nmap": nmap,
+        "whois": whois,
+        "nslookup": nslookup
+    })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000)
