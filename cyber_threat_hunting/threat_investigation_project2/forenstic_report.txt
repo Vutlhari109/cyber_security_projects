@@ -1,0 +1,108 @@
+🧾 Report Template: Cybercrime OSINT and Network Investigation
+📄 Title: Investigation Report on Suspected Malicious Domains Linked to IP Address 77.37.34.191
+
+IP ADDRESS SOURCE: Published by VIRUS TOTAL
+
+🕵️‍♂️ Investigator:
+Name: Vutlhari Mathebula
+
+Role: Independent Cyber Threat Analyst
+
+Tools Used: VirusTotal, Spider-foot, ViewDNS, WHOIS, Nmap, HTTP Headers, Browser Agent, OSINT tools
+
+🗓️ Date: 04 August 2025
+
+🧠 Objective:
+To analyze a reported suspicious IP address and uncover any connected malicious infrastructure such as domains, server behavior, or brute force patterns.
+
+🌐 Initial Indicator (IOC):
+IP Address: 77.37.34.191
+
+
+Flagged on: VirusTotal link - https://www.virustotal.com/gui/ip-address/77.37.34.191 
+
+Associated with 50+ domains as seen on [viewdns.info]
+
+🔍 OSINT & Network Findings:
+1. Linked Domains
+Total Domains Found: 53
+
+Domain Patterns: Suspicious TLDs, keyword stuffing, expired SSL
+
+Example Domains:
+
+suspicious-domain1.com
+
+payment-gateway-free-checker.site
+
+login-facebook-secure-reset.shop
+
+2. WHOIS / Registrar Info
+Most domains anonymized or registered under privacy-protected services
+
+Recent bulk registrations (suggesting automation)
+
+3. Server Behavior (Nmap/Web Headers)
+Open Ports: 80 (HTTP), 443 (HTTPS), 22 (SSH), 3306 (MySQL)
+
+XML-RPC endpoint responding with POST-only (WordPress indicator)
+
+HTTP Headers reveal:
+
+Outdated Server Software
+
+Suspicious redirections
+
+PHP warning errors
+
+4. Potential Brute Force / Exploit Activity
+XML-RPC (/xmlrpc.php) active on WordPress sites — known brute force vector
+
+No rate limiting detected
+
+Weak login responses and no CAPTCHA — could enable forceful entry
+
+Some pages showing signs of auto-login redirection tricks
+
+🔥 Risk Assessment:
+Risk Type	Evidence	Severity
+Command & Control (C2)	Multiple domains linked to single IP	High
+Brute Force Possible	Weak auth points like XML-RPC exposed	Medium
+Phishing Pages	Suspicious subdomain structure + redirects	High
+OSINT Traceability	Privacy-guarded WHOIS, hard to attribute owner	Medium
+
+🛑 Conclusion:
+This IP and its related domains present strong indicators of being part of a malicious or criminal infrastructure, possibly linked to phishing, brute-force attacks, or botnet C2 hosting. The investigation was done ethically using public tools and without unauthorized access.
+
+📨 Recommended Actions:
+Report this IP and related domains to:
+
+Google Safe Browsing
+
+VirusTotal Community
+
+AbuseIPDB / Spamhaus
+
+Hosting Provider (based on WHOIS info)
+
+Authorities to notify:
+
+South African Cybercrime Unit or SAPS if local
+
+IC3.gov 
+
+⚖️ Legal Notice:
+This report was created for ethical awareness and educational purposes. No illegal access or unauthorized intrusion was performed. Findings are based solely on passive reconnaissance and public threat intelligence tools.
+
+📎 Attachments:
+Screenshot of VirusTotal results
+
+ViewDNS domain dump
+
+Nmap results
+
+WHOIS records
+
+Sample redirection trace
+
+Header dumps
