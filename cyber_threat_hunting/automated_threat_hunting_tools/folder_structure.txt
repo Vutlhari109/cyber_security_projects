@@ -1,0 +1,34 @@
+automated_threat_hunting_tools/
+│
+├── domain_intel_tool/
+│   ├── domain_intel.py
+│   ├── README.md
+│   └── output/
+│
+├── pcap_analyzer/
+│   ├── analyze_pcap.py
+│   ├── README.md
+│   └── test.pcap
+│
+├── log_analyzer/
+│   ├── analyze_logs.py
+│   ├── sample_logs/
+│   └── README.md
+│
+├── malware_checker/
+│   ├── check_hash.py
+│   ├── README.md
+│
+├── osint_enricher/
+│   ├── enrich_osint.py
+│   └── README.md
+│
+├── real_time_monitor/
+│   ├── monitor.py
+│   └── README.md
+│
+├── honeypot_parser/
+│   ├── parse_honeypot.py
+│   └── cowrie_logs/
+│
+└── README.md  ← Overall documentation
