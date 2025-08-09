@@ -1,0 +1,5 @@
+1.  10:00:00.000 IP 192.168.1.50.12345 > 8.8.8.8.53: Flags [S], seq 0, win 64240, length 0
+2.  10:00:00.005 IP 8.8.8.8.53 > 192.168.1.50.12345: Flags [S.], seq 1000, ack 1, win 28960, length 0
+3.  10:00:00.006 IP 192.168.1.50.12345 > 8.8.8.8.53: Flags [.], ack 1, win 65535, length 0
+4.  10:00:00.010 IP 192.168.1.50.12345 > 8.8.8.8.53: Flags [P.], seq 1:40, ack 1, win 65535, length 39: DNS: Standard query www.paypal.com A
+5.  10:00:00.015 IP 192.168.1.200.53 > 192.168.1.50.12345: Flags [P.], seq 1:100, ack 40, win 28960, length 99: DNS: Standard query response www.paypal.com A 192.168.1.250

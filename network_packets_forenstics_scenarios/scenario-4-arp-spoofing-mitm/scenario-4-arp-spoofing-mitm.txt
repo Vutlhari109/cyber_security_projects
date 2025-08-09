@@ -1,0 +1,5 @@
+1.  20:30:00.000000 ARP, Request who-has 192.168.1.1 tell 192.168.1.100, length 28
+2.  20:30:00.001000 ARP, Reply 192.168.1.1 is-at 00:11:22:33:44:55, length 28
+3.  20:30:01.000000 ARP, Reply 192.168.1.1 is-at 66:77:88:99:AA:BB, length 28
+4.  20:30:02.000000 ARP, Reply 192.168.1.1 is-at 66:77:88:99:AA:BB, length 28
+5.  20:30:03.000000 ARP, Reply 192.168.1.1 is-at 66:77:88:99:AA:BB, length 28
