@@ -1,0 +1,137 @@
+==========================================================
+               DIGITAL FORENSICS CHEAT SHEET
+                CAINE / Linux / VirtualBox
+==========================================================
+
+# 1️⃣ Disk Acquisition & Imaging
+
+## Windows: Create .img from USB using Win32DiskImager
+# Select USB -> Read -> Save as image.img
+# Example: C:\New folder\image.img
+# Original USB remains intact
+
+## Windows: Convert .img -> VirtualBox .vdi
+# Open PowerShell in VBox folder
+.\VBoxManage.exe convertfromraw "C:\New folder\image.img" "C:\Program Files\Oracle\VirtualBox\usb_back.vdi" --format VDI
+# Notes:
+# - Quote paths with spaces
+# - Run with .\ if in current folder
+# - Original .img is untouched
+
+## Mount .vdi in CAINE
+sudo fdisk -l                     # List disks
+sudo mkdir /mnt/usb_back
+sudo mount -o ro /dev/sdX1 /mnt/usb_back   # Mount first partition read-only
+cd /mnt/usb_back
+ls                                  # Browse files including .E01
+
+==========================================================
+# 2️⃣ Handling .E01 Forensic Images Inside Disk
+
+## Mount .E01 using ewfmount
+sudo mkdir /mnt/e01
+sudo ewfmount /mnt/usb_back/path/to/file.E01 /mnt/e01
+cd /mnt/e01
+ls                                  # Browse files inside E01
+
+## Convert .E01 -> raw .dd for analysis
+sudo dd if=/mnt/e01/ewf1 of=/home/caine/Desktop/usb_backup_raw.dd bs=4M status=progress
+sha256sum /home/caine/Desktop/usb_backup_raw.dd   # Verify integrity
+
+==========================================================
+# 3️⃣ Volatility (Memory Analysis)
+
+## Identify memory profile
+file image.raw                     # Check type
+volatility -f image.raw imageinfo
+
+## Common commands
+# List processes
+volatility -f image.raw --profile=Win7SP1x64 pslist
+
+# Dump process memory
+volatility -f image.raw --profile=Win7SP1x64 memdump -p <PID> -D ./dumps/
+
+# Extract network connections
+volatility -f image.raw --profile=Win7SP1x64 netscan
+
+# Extract registry hives
+volatility -f image.raw --profile=Win7SP1x64 hivelist
+volatility -f image.raw --profile=Win7SP1x64 printkey -K "Software\Microsoft\Windows\CurrentVersion\Run"
+
+==========================================================
+# 4️⃣ Autopsy (GUI Forensic Analysis)
+
+autopsy                             # Opens browser interface http://localhost:9999
+
+## Steps:
+1. New Case -> Name case
+2. Add Evidence -> Select usb_backup_raw.dd or .E01
+3. Wait for Autopsy to ingest disk
+
+## Investigations:
+- File Analysis -> Pictures, Documents, Extracted Files
+- Keyword search -> names, emails, hashes
+- Timeline Analysis -> File creation/modification/access
+- Hash Sets -> Compare with known files
+
+## Recover Files:
+- Right-click -> Extract -> Save to workspace
+
+==========================================================
+# 5️⃣ SleuthKit / CLI Analysis
+
+## Identify Partitions
+mmls usb_backup_raw.dd
+
+## Mount Partition
+sudo mkdir /mnt/part1
+sudo mount -o ro,loop,offset=$((2048*512)) usb_backup_raw.dd /mnt/part1
+# Replace 2048 with starting sector from mmls
+
+## Common SleuthKit commands
+# List files
+fls -r usb_backup_raw.dd
+
+# Examine file metadata
+istat usb_backup_raw.dd <inode>
+
+# Recover deleted files
+icat usb_backup_raw.dd <inode> > recovered_file.ext
+
+# Extract all files recursively
+tsk_recover -a usb_backup_raw.dd ./recovered_files/
+
+==========================================================
+# 6️⃣ Investigation Pointers / Steps
+
+1. Verify integrity: sha256sum usb_backup_raw.dd
+2. Work read-only on all evidence
+3. Document everything: timestamps, commands, outputs
+4. Timeline reconstruction: file creation, modification, access
+5. Keyword searches: important terms, emails, suspicious filenames
+6. Network artifacts: logins, connections
+7. Recover deleted files: icat / tsk_recover
+8. Report findings: include hashes, recovered files, chain-of-custody
+
+==========================================================
+# 7️⃣ Forensic Report Template
+
+- Header: Case name, examiner, date/time
+- Evidence Description: Source, hashes, imaging method
+- Analysis Summary: Tools used, steps, findings
+- Recovered Artifacts: Files, screenshots, emails, logs
+- Timeline: Key events extracted from filesystem/memory
+- Conclusion & Recommendations
+
+==========================================================
+# 8️⃣ Quick Notes / Tips
+
+- Always mount read-only (-o ro)
+- Use ewfmount for .E01 images
+- Keep original images intact; work on copies
+- Hash everything before/after analysis
+- Maintain folder structure for recovered data
+- For Volatility: know the memory profile of target OS
+- For Autopsy: wait for full ingestion before analysis
+- For SleuthKit: use starting sector from mmls when mounting partitions
