@@ -1,68 +1,64 @@
-# 🛡️ Cybersecurity Projects: Ethical Hacking & Forensics
+# Cyber Forensics & Disk Analysis Projects
 
-A collection of hands-on cybersecurity tools, reverse shells, traffic logs, screenshots, and investigative reports for ethical hacking training and cybercrime forensics.
+## Project Overview
+This repository showcases hands-on **cyber forensics investigations**, including disk image analysis, deleted file recovery, log correlation, and network event reconstruction. Projects simulate real-world forensic investigations where data has been deleted, altered, or compromised.
 
-Built for learning and simulating real-world attack and defense techniques in safe environments.
-
----
-
-## 🎯 Objectives
-
-- Exploit intentionally vulnerable systems (e.g., DVWA, Juice Shop)
-- Capture and analyze network traffic using Wireshark
-- Simulate real post-exploitation with reverse shell payloads
-- Log attacker activity and generate penetration test reports
-- Practice forensics by tracing attacks from victim systems
-- Analyze logs for attacker behavior and anomaly detection
-- Perform threat intelligence and OSINT investigations
-- Prepare a cybersecurity portfolio for career opportunities
+### Key Project: Deleted Files Recovery
+- **Objective:** Recover deleted files from a disk image to simulate forensic evidence recovery.
+- **Tools:** Sleuth Kit (`tsk_recover`, `fls`), Photorec, Autopsy (optional).
+- **Methodology:**
+  1. Mounted disk images using Sleuth Kit.
+  2. Enumerated deleted files with `fls`.
+  3. Recovered files using `tsk_recover`.
+  4. Verified integrity and contents of recovered files.
+- **Results:** Successfully recovered 100+ files (documents, images, PDFs) stored in `recovered_files/`. Screenshots and command outputs documented for evidence tracking.
+- **Skills Demonstrated:** Disk image analysis, file system understanding (NTFS, FAT32), data recovery techniques, chain-of-custody documentation.
 
 ---
 
-## 🧰 Tools & Skills Used
-
-### 🔐 Offensive Security & Ethical Hacking
-- 🐍 Python (reverse shells, automation, scanners)
-- 🐧 Kali Linux
-- 📡 Netcat, Nmap, Hydra, Gobuster, Burp Suite
-- 🛡️ DVWA / OWASP Juice Shop
-- 🧪 SQL Injection, XSS, Auth Bypass, Directory Brute-Force
-- 🔧 Metasploit Framework
-
-### 🕵️‍♂️ Digital Forensics & Log Analysis
-- 🧾 System Log Correlation
-- 📁 File Metadata & Timeline Analysis
-- 🔗 Chain of Custody Simulations
-- 📊 Event Reconstruction from log artifacts
-- 🧠 Autopsy (GUI Forensics Tool)
-- 📈 ELK Stack (Elasticsearch, Logstash, Kibana)
-
-### 🧠 Threat Hunting & Intelligence
-- 🌐 OSINT Tools: SpiderFoot, WHOIS, Shodan
-- 🧠 Threat Intel Platforms: VirusTotal, AbuseIPDB
-- 🧭 Network Analysis: Wireshark, tcpdump
-- 📁 Log-Based Threat Hunting: Splunk, ELK Stack
-- 🔍 Vulnerability Scanning: Nmap, Nikto
-
-### 🧰 Additional Skills
-- 📑 Markdown & PDF Reporting
-- 🤖 AI Integration (WhatsApp Bot with Flask)
-- 📦 RESTful API Development
-- 📸 Screenshot Logging for documentation
+## Cyber Forensics & Threat Investigation Objectives
+- Analyze and reconstruct events from compromised systems.
+- Recover and preserve deleted or hidden data for evidence.
+- Correlate system, application, and network logs to detect anomalies.
+- Perform timeline analysis of attacker activity on victim systems.
+- Conduct OSINT and threat intelligence investigations.
+- Build a forensic portfolio suitable for cybersecurity careers in law enforcement, government, and corporate investigations.
 
 ---
 
-## ⚠ Disclaimer
+## Tools & Skills Highlight
 
-> This repository is for **educational purposes only**. All demonstrations and code are intended for use on systems you own or have explicit permission to test.  
-> Misuse of these tools is illegal and unethical.
+### Disk & File Forensics
+- **Sleuth Kit / Autopsy:** Disk image mounting, file recovery, metadata analysis.
+- **Photorec / Scalpel / Foremost:** Deleted file and data carving.
+- **Metadata & Timeline Analysis:** NTFS/FAT32 structures, timestamps, file hashes.
+- **Chain-of-Custody Simulations:** Documenting evidence handling for legal and investigative purposes.
+
+### Log & Network Analysis
+- **Wireshark / tcpdump:** Capture and analyze network traffic for forensic investigations.
+- **ELK Stack / Splunk:** Log collection, event correlation, and visualization.
+- **System Log Correlation:** Identify suspicious activity and reconstruct incident timelines.
+
+### Threat Intelligence & OSINT
+- **SpiderFoot, WHOIS, Shodan:** Investigate domains, IPs, and network infrastructure.
+- **VirusTotal / AbuseIPDB:** Malware and threat actor profiling.
+- **Network Forensics:** Trace attacker activity from logs and captured packets.
+
+### Reporting & Documentation
+- Markdown and PDF reporting for investigation documentation.
+- Screenshot logging for chain-of-evidence verification.
+- Automated scripts for data extraction and forensic processing (Python).
 
 ---
 
-## 📣 Author
+## Disclaimer
+This repository is strictly for **educational and research purposes**. All tools and procedures must be executed on systems you own or have explicit permission to investigate. Unauthorized use is illegal and unethical.
 
+---
+
+## Author
 **Vutlhari Mathebula**  
-Cybersecurity Learner | Ethical Hacker | Forensics & Threat Hunter  
+Cybersecurity Learner | Digital Forensics & Threat Investigator  
 🔗 GitHub: [github.com/Vutlhari109](https://github.com/Vutlhari109)  
 📧 Email: vutlharimathebula74@gmail.com  
 🇿🇦 South Africa
