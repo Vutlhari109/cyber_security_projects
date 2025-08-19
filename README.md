@@ -1,4 +1,4 @@
-# Cyber Forensics & Disk Analysis Projects
+🛡Cyber Forensics & Disk Analysis Projects🔎
 
 ## Project Overview
 This repository showcases hands-on **cyber forensics investigations**, including disk image analysis, deleted file recovery, log correlation, and network event reconstruction. Projects simulate real-world forensic investigations where data has been deleted, altered, or compromised.
