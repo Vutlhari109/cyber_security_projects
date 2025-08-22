@@ -1,0 +1,7 @@
+d/d 11568-144-5:	Config
+d/d 12014-144-1:	download
+d/d 12001-144-5:	log
+d/d 12024-144-1:	malwareprofile
+d/d 7545-144-5:	outbox
+d/d 12027-144-6:	profile
+d/d 12030-144-1:	quarantine

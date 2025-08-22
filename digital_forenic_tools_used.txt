@@ -1,0 +1,40 @@
+--- List of tools used in my cyber security projects ----
+
+
+
+===== Networking =====
+
+Wireshark
+tcpdump
+tshark
+Nmap
+
+===== Log Analysis =====
+
+ELK ( Elastic Search, Logstash & Kibana )
+
+===== Disk Forensic =====
+
+Sleuth Kit
+  - mmls
+    -  fls
+       - fsstat
+         - icat
+           - istat
+             - bulk extractor
+               - tsk recover
+
+Autopsy 
+guymager
+fmount
+ewfmount
+exiftool
+scalpel
+photorec
+
+===== RAM Forensic ====
+
+Volatility
+Binwalk
+
+

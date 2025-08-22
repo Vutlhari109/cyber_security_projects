@@ -1,0 +1,77 @@
+r/- * 0:	Documents and Settings/Administrator/Local Settings/Temp/AVGDownloadManager/packages/avgdm90_pro_0700_027.pack
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.01.16.01.01.lkr1
+r/- * 11832:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.01.23.00.59a02708
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.09.18.01.00
+r/- * 15725:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.05.12.01.01.lkr1
+r/- * 15593:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.05.20.00.58
+r/- * 15739:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.06.02.01.00.lkr1
+r/- * 15607:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.06.10.01.00
+r/- * 15621:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.07.04.01.01
+r/- * 10396:	Documents and Settings/All Users/Application Data/avg9/Antispam/scdns.bin
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.10.00.00.59.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.10.08.01.01
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.10.14.01.00.lkr1
+r/r * 23574-128-1(realloc):	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.11.12.01.00a01116
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.11.08.01.01.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.08.13.00.59
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.08.15.01.01
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.11.15.01.02
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.11.21.01.01.lkr1
+r/r * 23792-128-1(realloc):	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.12.02.01.01a01636
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.12.04.01.01
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.12.10.01.00.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.05.05.01.01.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.05.19.01.00.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.06.09.01.00.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.07.03.01.02.lkr1
+r/- * 23251:	Documents and Settings/All Users/Application Data/avg9/Antispam/scdns.bin
+r/- * 23255:	Documents and Settings/All Users/Application Data/avg9/Antispam/scdns.bina02624
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.08.20.01.01.lkr1
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Antispam/sc17.bin.incr.2009.11.09.11.01.00.lkr1
+-/r * 24049-128-1:	Documents and Settings/All Users/Application Data/avg9/Antispam/scdns.bin
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Chjw/cm-2-p.dat
+-/r * 23943-128-1:	Documents and Settings/All Users/Application Data/avg9/Chjw/cm-2-i.dat
+-/r * 23948-128-1:	Documents and Settings/All Users/Application Data/avg9/Chjw/cm-2-i.dat
+-/r * 24029-128-1:	Documents and Settings/All Users/Application Data/avg9/Chjw/cm-1-p.dat
+-/r * 27984-128-1:	Documents and Settings/All Users/Application Data/avg9/Chjw/cm-0-p.dat
+-/r * 23905-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/Config/globalConfig.xml
+-/r * 24193-128-3:	Documents and Settings/All Users/Application Data/avg9/IDS/malwareprofile/backup.dat
+-/r * 26041-128-3:	Documents and Settings/All Users/Application Data/avg9/IDS/malwareprofile/backup.dat
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/C__PROGRAM FILES_AVG_AVG9_AVGUPD.EXE.ndb
+-/r * 17172-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/C__PROGRAM FILES_AVG_AVG9_AVGEMC.EXE.ndb_ndb.bak
+-/r * 24443-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/globalLoadable.bak
+-/r * 24465-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/C__PROGRAM FILES_MOZILLA THUNDERBIRD_THUNDERBIRD.EXE.ndb_ndb.bak
+-/r * 26024-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/MalwareNetwork.bak
+-/r * 26026-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/C__PROGRAM FILES_MOZILLA THUNDERBIRD_THUNDERBIRD.EXE.ndb_ndb.bak
+-/r * 26034-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/C__WINDOWS_SYSTEM32_SVCHOST.EXE.ndb_ndb.bak
+-/r * 26038-128-4:	Documents and Settings/All Users/Application Data/avg9/IDS/profile/SYSTEM.ndb_ndb.bak
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/Temp/file9514.tmp
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/update/download/u7iavi2492u2491me.bin
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/update/download/w9upd704b694zc.bin
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgidpsdkx.dll
+r/r * 15834-128-4(realloc):	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgidpsdkx.dll
+r/r * 15837-128-3(realloc):	Documents and Settings/All Users/Application Data/avg9/update/prepare/avglngx.dll
+r/- * 15836:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avglngx.dll.prepare
+r/- * 15839:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgmtrapx.dll.prepare
+r/- * 15842:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgmwdef_us.mht.prepare
+r/- * 15846:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgssie.dll.prepare
+r/- * 15822:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgxch32.dll.prepare
+r/- * 15844:	Documents and Settings/All Users/Application Data/avg9/update/prepare/avgxpl.dll.prepare
+r/- * 0:	Documents and Settings/All Users/Application Data/avg9/update/prepare/temp/internalList.dat.old
+r/- * 0:	$AVG/$CHJW/avgcchmi.dat
+-/r * 23809-128-4:	$AVG/$CHJW/avgcchmf.dat
+-/r * 23946-128-4:	$AVG/$CHJW/avgcchff.dat
+-/r * 24027-128-4:	$AVG/$CHJW/avgcchmi.dat
+-/r * 24028-128-4:	$AVG/$CHJW/avgcchfi.dat
+r/- * 0:	Program Files/AVG/AVG9/avgcfgx.dll
+r/- * 11804:	Program Files/AVG/AVG9/avgcorex.dll
+r/- * 11790:	Program Files/AVG/AVG9/avgfrw.exe
+r/- * 11783:	Program Files/AVG/AVG9/avgfws9.exe
+r/- * 11780:	Program Files/AVG/AVG9/avgfwui.dll
+r/- * 11781:	Program Files/AVG/AVG9/avgfwwiz.dll
+r/- * 0:	Program Files/AVG/AVG9/avgupd.dat.prepare
+r/r * 11770-128-3(realloc):	Program Files/AVG/AVG9/avgupd.dll.old
+r/- * 11747:	Program Files/AVG/AVG9/avgxpl.dll
+r/r * 15847-128-4(realloc):	Program Files/AVG/AVG9/avgxpl.dll.prepare
+r/- * 0:	Program Files/AVG/AVG9/avgsrmax.exe
+r/- * 0:	Program Files/AVG/AVG9/avgfwwiz.dll

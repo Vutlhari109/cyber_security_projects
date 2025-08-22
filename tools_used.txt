@@ -1,0 +1,71 @@
+Digital Forensics Portfolio - Tools Used
+
+01. Disk Forensics
+- Sleuth Kit (fls, tsk_recover)
+- Photorec
+- Autopsy
+- Scalpel
+- FTK Imager (optional for disk imaging)
+
+02. Memory Forensics
+- Volatility Framework
+- Rekall (optional)
+- RAM dump acquisition tools (DumpIt, FTK Imager)
+- Process Explorer (Windows)
+
+03. Network Forensics
+- Wireshark
+- tcpdump
+- NetworkMiner
+- tshark
+- NetFlow analyzers (optional)
+
+04. Malware Analysis
+- IDA Free / Ghidra (static analysis)
+- strings, hexdump
+- Sandbox environments (Cuckoo Sandbox, Any.Run)
+- PEStudio / Exeinfo PE
+- Procmon / Process Explorer (runtime monitoring)
+
+05. Log Forensics
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- Splunk (free version)
+- Windows Event Viewer / EVTX parsing
+- grep / awk / sed for log analysis
+- Notepad++ / VSCode for log inspection
+
+06. OSINT Investigation
+- SpiderFoot
+- WHOIS / DomainTools
+- Shodan
+- VirusTotal
+- AbuseIPDB
+- Maltego (optional)
+
+07. Mobile Forensics
+- MOBILedit Forensic / Cellebrite UFED (optional)
+- ADB (Android Debug Bridge)
+- SMS Backup & XML extraction
+- SQLite Browser (for app databases)
+- Autopsy mobile modules
+
+08. File Carving & Data Recovery
+- Photorec
+- Scalpel
+- Foremost
+- TestDisk (partition recovery)
+- Hex editors (HxD, Bless)
+
+09. Malware Forensic Correlation
+- Wireshark / tcpdump
+- Volatility / Rekall
+- ELK Stack / Splunk
+- Python scripts for log correlation
+- Timeline analysis tools (Mactime, log2timeline)
+
+10. Incident Response Simulation
+- FTK Imager / Autopsy
+- Timeline creation tools (Mactime, log2timeline)
+- ELK Stack / Splunk
+- PDF & Markdown reporting tools
+- Screenshot capture software
