@@ -1,4 +1,4 @@
-Digital-Forensics-Portfolio/
+cyber_security_projects/
 │
 ├── 01_Disk_Forensics/
 │   ├── Deleted_Files_Recovery/
