@@ -1,9 +1,0 @@
-dns_spoofing_tracing_projects/
-├── victim_site/                 # Fake login site
-│   └── app.py
-├── attacker_site/               # Redirecting site
-│   └── app.py
-├── README.md                    # Explain how to run and what to analyze
-├── /etc/hosts (example copy)    # Example of modified hosts entries
-├── capture_examples/            # (Optional) Save Wireshark .pcap files here
-└── notes.txt                    # Write what to observe in Suricata or Wireshark

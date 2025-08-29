@@ -1,4 +1,0 @@
-[2025-08-10 15:33:21] 192.168.1.88 GET /admin/login.php HTTP/1.1 200 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-[2025-08-10 15:33:24] 192.168.1.88 POST /admin/login.php HTTP/1.1 401 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-[2025-08-10 15:33:26] 192.168.1.88 POST /admin/login.php HTTP/1.1 200 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-[2025-08-10 15:33:27] 192.168.1.88 GET /settings.php HTTP/1.1 200 - "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
